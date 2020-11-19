@@ -44,17 +44,18 @@ including with @font-face definition
 
 ### About Prettier and it settings:
 
-in .eslintrc :
+in **.eslintrc** :
+
 disable Proptypes error:
-`"react/prop-types": 0,`
+
+`"react/prop-types": 0`
+
 disable no-used-var error:
+
 `"no-unused-vars":0`
 
-or commentat file beginning:
-/_ eslint react/prop-types: 0 _/
+or comment file beginning:
+
+`/* eslint react/prop-types: 0 */`
 or this:
-/_ eslint react/forbid-prop-types: 0 _/
-
-```
-
-```
+`/* eslint react/forbid-prop-types: 0 */`
