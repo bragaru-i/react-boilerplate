@@ -22,7 +22,7 @@ You can force the latter by using unquote, a SCSS function.
 
 ```
 
-instead of
+instead of a
 
 ```
 {
