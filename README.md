@@ -5,7 +5,30 @@ React17, Babel7, Webpack5, HotReload Dev server, SCSS-CSS-modules React Router
 #### CSS/SCSS modules enabled
 
 _NOTE_
-when using modules in React and for variable usage: you must import variables from assets folder
+
+1. when using modules in React and for variable usage: you must import variables from assets folder
+
+2. There is a calc function in both SCSS [compile-time] and CSS [run-time]. You're likely invoking the former instead of the latter.
+
+For obvious reasons mixing units won't work compile-time, but will at run-time.
+
+You can force the latter by using unquote, a SCSS function.
+
+```
+{
+  height: unquote("-webkit-calc(100% - 40px)");
+
+  }
+
+```
+
+instead of
+
+```
+{
+  height: calc( 100% - 40px )
+}
+```
 
 `import './App.css'`
 
