@@ -1,8 +1,8 @@
-Features:
+# Features:
 
-React17, Babel7, Webpack5, HotReload Dev server, SCSS-CSS-modules React Router
+**React17, Babel7, Webpack5, HotReload Dev server, SCSS-CSS-modules React Router**
 
-#### CSS/SCSS modules enabled
+## CSS/SCSS modules enabled
 
 _NOTE_
 
@@ -30,13 +30,15 @@ instead of a
 }
 ```
 
+**Hot to import a css/scss file in a react component**
+
 `import './App.css'`
 
-or module
+or a css/scss module
 
 `import styles from './App.module.scss"`
 
-#### Fonts Support:
+## Fonts Support:
 
 as example added Muli Fonts
 
@@ -61,11 +63,11 @@ including with @font-face definition
 }
 ```
 
-### React Router enabled in dev server.
+## React Router enabled in dev server.
 
     `historyApiFallback: true`
 
-### About Prettier and it settings:
+## About Prettier and it settings:
 
 in **.eslintrc** :
 
