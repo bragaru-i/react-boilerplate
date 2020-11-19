@@ -43,6 +43,8 @@ module.exports = {
     contentBase: path.resolve(__dirname, '..', './dist'),
     hot: true,
     port: 3000,
+    // Routing to react-router-dom
+    historyApiFallback: true,
   },
   devtool: 'eval-source-map',
 };
