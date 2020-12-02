@@ -1,5 +1,17 @@
 # Features:
 
+**CAUTION**
+https://github.com/smooth-code/error-overlay-webpack-plugin
+React overlay error plugin not worked . version incapability with webpack 5
+*alexander-akait* Fixed in v4 branch (release will be soon)
+added:   
+```
+"process": "0.11.10",
+"error-overlay-webpack-plugin": "^0.4.1",
+
+```
+
+
 **React17, Babel7, Webpack5, HotReload Dev server, SCSS-CSS-modules React Router**
 
 ## CSS/SCSS modules enabled

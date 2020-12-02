@@ -1,6 +1,7 @@
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
 const webpack = require('webpack');
+// const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -34,10 +35,15 @@ module.exports = {
     ],
   },
   plugins: [
+    // load process.env for browser mode
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new Dotenv({
       path: path.resolve(__dirname, '..', './.env.development'),
     }),
+    // new ErrorOverlayPlugin(),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, '..', './dist'),
@@ -45,6 +51,13 @@ module.exports = {
     port: 3000,
     // Routing to react-router-dom
     historyApiFallback: true,
+
+    // diplay overlay errors
+    overlay: {
+      warnings: true,
+      errors: true,
+    },
   },
+  // devtool: 'cheap-module-source-map', // overlay Error plugin asks for this devtool option
   devtool: 'eval-source-map',
 };

@@ -11,7 +11,6 @@ const App = ({ title }) => {
       A simple react boilerplate
       <div className={styles.LoadingCubes}>
         <LoadingCubes />
-        sadasd asdasd asdsad sadasd asdasd asdasd asdasd asdasd asdasd
       </div>
     </div>
   );
